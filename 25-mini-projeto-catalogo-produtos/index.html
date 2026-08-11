@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo de Produtos</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div>
+      <span class="eyebrow">Revisão de JavaScript</span>
+      <h1>Catálogo de Produtos</h1>
+      <p>Pesquise, filtre, ordene e organize seus produtos favoritos.</p>
+    </div>
+
+    <div class="favorites-summary">
+      Favoritos:
+      <strong id="favorites-count">0</strong>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="filters">
+      <div class="field">
+        <label for="search">Pesquisar</label>
+        <input id="search" type="search" placeholder="Digite o nome de um produto" />
+      </div>
+
+      <div class="field">
+        <label for="category-filter">Categoria</label>
+        <select id="category-filter">
+          <option value="all">Todas as categorias</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="sort-filter">Ordenar por</label>
+        <select id="sort-filter">
+          <option value="default">Padrão</option>
+          <option value="price-asc">Menor preço</option>
+          <option value="price-desc">Maior preço</option>
+        </select>
+      </div>
+
+      <label class="checkbox-field">
+        <input id="stock-filter" type="checkbox" />
+        Somente produtos em estoque
+      </label>
+    </section>
+
+    <section>
+      <div class="catalog-heading">
+        <div>
+          <span class="eyebrow">Produtos</span>
+          <h2>Catálogo</h2>
+        </div>
+
+        <span id="results-count">0 produtos</span>
+      </div>
+
+      <div id="products-list" class="products-grid"></div>
+
+      <p id="empty-message" class="empty-message" hidden>
+        Nenhum produto encontrado.
+      </p>
+    </section>
+  </main>
+
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>
