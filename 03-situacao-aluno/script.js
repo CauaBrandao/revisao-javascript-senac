@@ -2,8 +2,6 @@
   EXERCÍCIO 03 — SITUAÇÃO DO ALUNO
 */
 
-const nomeAluno = "Aluno Exemplo";
-const media = 7.2;
 
 // Defina as faixas de classificação.
 // Exemplo:
@@ -19,3 +17,20 @@ const media = 7.2;
 
 // TODO:
 // Exiba uma mensagem contendo nome, média e situação.
+
+
+const nome = "Cauã";
+let nota1 = 8.0;
+let nota2 = 4.5;
+let media = (nota1 + nota2) / 2;
+let situacao;
+
+if (media >= 7.0) {
+    situacao = "Aprovado";
+} else if (media >= 5.0 && media < 7.0) {
+    situacao = "Recuperação";
+} else {
+    situacao = "Reprovado";
+}
+
+console.log(`Aluno: ${nome} | Média: ${media} | Situação: ${situacao}`);

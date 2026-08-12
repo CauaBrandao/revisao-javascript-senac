@@ -2,7 +2,6 @@
   EXERCÍCIO 02 — CALCULADORA DE MÉDIA
 */
 
-const nomeAluno = "Aluno Exemplo";
 
 // TODO:
 // Crie quatro variáveis/constantes para armazenar as notas.
@@ -21,3 +20,17 @@ const nomeAluno = "Aluno Exemplo";
 
 // DESAFIO:
 // Formate a média com duas casas decimais.
+
+
+const nomeAluno = "Cauã";
+const nota1 = 7.5;
+const nota2 = 8.0;
+const nota3 = 5.5;
+const nota4 = 8.5;
+
+const somaNotas = nota1 + nota2 + nota3 + nota4;
+const mediaFinal = somaNotas / 4;
+
+console.log(`Nome do aluno: ${nomeAluno}`);
+console.log(`Notas: ${nota1}, ${nota2}, ${nota3}, ${nota4}`);
+console.log(`Média final: ${mediaFinal.toFixed(2)}`);

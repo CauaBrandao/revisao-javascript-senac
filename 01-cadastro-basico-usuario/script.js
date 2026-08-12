@@ -23,3 +23,19 @@
 
 // TODO 7:
 // Utilize typeof para verificar o tipo de cada variável criada.
+
+const nome = "Cauã";
+let idade = 20;
+const email = "caua@gmail.com";
+let estaLogado = true;
+let ultimoAcesso = null;
+let fotoPerfil;
+
+console.log(`O usuário ${nome} tem ${idade} anos e seu e-mail é ${email}. Está logado? ${estaLogado}. Último acesso: ${ultimoAcesso}. Foto de perfil: ${fotoPerfil}.`);
+
+console.log(typeof nome);
+console.log(typeof idade);
+console.log(typeof email);
+console.log(typeof estaLogado);
+console.log(typeof ultimoAcesso);
+console.log(typeof fotoPerfil);
