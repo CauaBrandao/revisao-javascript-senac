@@ -2,14 +2,6 @@
   EXERCÍCIO 12 — DESTRUCTURING E SPREAD
 */
 
-const aluno = {
-  nome: "Marina",
-  idade: 22,
-  curso: "Desenvolvimento Web",
-  notas: [8.5, 7.0, 9.0],
-  situacao: "Em análise",
-};
-
 // TODO:
 // Extraia nome, curso e notas utilizando destructuring.
 
@@ -29,3 +21,31 @@ const aluno = {
 
 // TODO:
 // Exiba os dois objetos para comparação.
+
+
+/*
+  EXERCÍCIO 12 — DESTRUCTURING E SPREAD
+*/
+
+const aluno = {
+  nome: "Ricardo",
+  idade: 20,
+  curso: "Tecnologia em Sistemas para Internet",
+  notas: [8.5, 7.0, 9.0],
+  situacao: "Em análise",
+};
+
+
+let { nome, curso, notas } = aluno;
+
+let media = (notas[0] + notas[1] + notas[2]) / notas.length;
+
+let alunoAtualizado = {
+  ...aluno,
+  media: media,
+  situacao: "Aprovado"
+};
+
+
+console.log(aluno);
+console.log(alunoAtualizado);

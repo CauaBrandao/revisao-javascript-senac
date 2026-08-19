@@ -30,3 +30,13 @@ function dividir(a, b) {
 
 // TODO:
 // Crie uma arrow function calcular() mantendo o comportamento do exercício anterior.
+
+
+const calcular = (a, b, op) => ({ "+": a + b, "-": a - b, "*": a * b, "/": b === 0 ? "Erro: Divisão por zero" : a / b }[op] || "Erro: Operação desconhecida.");
+
+console.log(calcular(10, 5, "+"));
+console.log(calcular(10, 5, "-"));
+console.log(calcular(10, 5, "*"));
+console.log(calcular(10, 5, "/"));
+console.log(calcular(10, 0, "/"));
+console.log(calcular(10, 5, "potencia"));
